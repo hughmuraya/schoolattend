@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
     tools:context=".Welcome.WelcomePage">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@color/colorPrimary"/>
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="@drawable/button_design"
-        android:text="@string/action_sign_in"
-        android:onClick="goToLogin"/>
+        android:orientation="vertical">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="@drawable/button_design"
-        android:text="@string/register"
-        android:onClick="goToRegister"/>
+        <ImageView
+            android:id="@+id/Icon"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/tertiary_text_light"
+            android:src="@drawable/item856404_600px"
+            android:contentDescription="TODO" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/ButtonSign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_design"
+            android:onClick="goToLogin"
+            android:text="@string/action_sign_in" />
+
+        <Button
+            android:id="@+id/ButtonReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_design"
+            android:onClick="goToRegister"
+            android:text="@string/register" />
+
+    </LinearLayout>
+
+</ScrollView>

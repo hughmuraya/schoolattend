@@ -19,14 +19,16 @@
             android:background="@drawable/button_design"
             android:layout_marginStart="5dp"
             android:id="@id/ScanQR"
-            android:text="@string/scan_id"/>
+            android:text="@string/scan_id"
+            android:onClick="goToScan"/>
         <Button
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:background="@drawable/button_design"
             android:layout_marginStart="5dp"
             android:id="@+id/submit"
-            android:text="@string/submit" />
+            android:text="@string/submit"
+            android:onClick="goToHome"/>
 
     </LinearLayout>
 

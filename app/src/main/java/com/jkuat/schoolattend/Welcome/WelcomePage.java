@@ -47,8 +47,8 @@ public class WelcomePage extends AppCompatActivity {
 
         try{
 
-            Intent myint1=new Intent(getApplicationContext(), LoginActivity.class);
-            startActivity(myint1);
+            Intent myint=new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(myint);
 
         }
         catch(Exception e){
