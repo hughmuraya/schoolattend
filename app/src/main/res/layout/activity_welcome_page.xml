@@ -15,9 +15,8 @@
             android:id="@+id/Icon"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:background="@android:color/tertiary_text_light"
             android:src="@drawable/item856404_600px"
-            android:contentDescription="TODO" />
+            android:layout_marginTop="20dp"/>
 
         <Button
             android:id="@+id/ButtonSign"
@@ -34,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/button_design"
-            android:onClick="goToRegister"
+            android:onClick="gotoRegister"
             android:text="@string/register" />
 
     </LinearLayout>

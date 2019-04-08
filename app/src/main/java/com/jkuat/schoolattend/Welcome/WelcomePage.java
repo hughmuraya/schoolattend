@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.jkuat.schoolattend.Login.Login;
 import com.jkuat.schoolattend.Login.LoginActivity;
 import com.jkuat.schoolattend.R;
 import com.jkuat.schoolattend.Register.RegisterLecturer;
+import com.jkuat.schoolattend.Register.RegisterStudent;
 
 public class WelcomePage extends AppCompatActivity {
 
@@ -30,24 +32,15 @@ public class WelcomePage extends AppCompatActivity {
 
         }
     }
-    public void goToRegister(View v){
-
-        try{
-
-            Intent myint=new Intent(getApplicationContext(), RegisterLecturer.class);
-            startActivity(myint);
-
-        }
-        catch(Exception e){
-
-
-        }
+    public void gotoRegister(View u){
+        Intent newint= new Intent(getApplicationContext(),RegisterLecturer.class);
+        startActivity(newint);
     }
     public void goToLogin(View v){
 
         try{
 
-            Intent myint=new Intent(getApplicationContext(), LoginActivity.class);
+            Intent myint=new Intent(getApplicationContext(), Login.class);
             startActivity(myint);
 
         }
